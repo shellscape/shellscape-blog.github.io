@@ -1,0 +1,174 @@
+/* HTML5 Boilerplate  */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; background: #222; }
+
+::-moz-selection { background: #98B232; color: #fff; text-shadow: none; }
+::selection { background: #98B232; color: #fff; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+/* fonts */
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('fonts/OpenSans-Semibold-webfont.eot');
+    src: url('fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('fonts/OpenSans-Bold-webfont.eot');
+    src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansExtrabold';
+    src: url('fonts/OpenSans-ExtraBold-webfont.eot');
+    src: url('fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-ExtraBold-webfont.woff') format('woff'),
+         url('fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* begin shellscape */
+
+body { min-width: 990px; color: #fff; background: #222; font-size: 10px; line-height: 1; font-family: OpenSansRegular, Segoe UI, Myriad Pro, Arial, Helvetica; }
+a, a:visited, a:active { color: #fff; text-decoration: none; }
+a:hover { color: #90C308; }
+section { position: relative; }
+footer div { margin: 0 auto; width: 990px; overflow-y: auto; overflow-x: visible; position: relative; }
+
+header { width: 521px; height: 45px; background: url(../images/header.png) no-repeat; padding-bottom: 82px; }
+
+aside { top: 20px; right: 28px; position: fixed; width: 174px; z-index: 9; }
+aside ul { margin: 0; padding: 0; }
+aside li { list-style: none; margin: 0; padding: 0; padding-bottom: 16px; }
+aside a { width: 154px; display: inline-block; font-size: 4em; text-align: right; }
+aside a.logo { width: 174px; height: 132px; background: url(../images/bg-landing.png) no-repeat; padding-bottom: 12px; }
+aside a.gnp { letter-spacing: 15px; padding-left: 15px; }
+aside a.brew { padding-right: 15px; }
+aside a.spp { letter-spacing: 21px; padding-left: 21px; }
+aside a.twitter { margin: 0 10px 0 40px; }
+
+article { font-size: 1.4em; padding-right: 194px; line-height: 1.5em; padding-top: 70px; }
+article:first-child { padding-top: 0; }
+article h1 { font-size: 4em; font-weight: normal; margin: 0; padding: 0 0 16px 24px; }
+article h1 a { color: #fff !important; text-decoration: none !important; }
+article h1 a:hover { color: #90C308 !important; }
+article h5 { color: #ccc; font-size: 0.9em; font-style: italic; font-weight: normal; margin: 0; padding: 0; padding: 0 0 10px 24px; }
+article a { color: #90C308 !important; }
+article a:hover { text-decoration: underline; }
+article .gist { display: inline-block; min-width: 420px; }
+
+a.twitter { background: url(../images/site-glyphs.png) no-repeat 0 -1px; width: 51px; height: 48px; }
+a.github { background: url(../images/site-glyphs.png) no-repeat -149px -1px; width: 48px; height: 48px; }
+
+body { background: url(../images/landing-bg-24bit.jpg) repeat-x -503px -394px fixed; }
+
+#main { max-width: 1200px; padding: 24px 0 0 22px; }
+
+#posts { padding: 0 0 60px 16px; }
+
+footer { height: 249px; background: url(../images/bg-footer.png); }
+footer div { position: relative; height: 249px; }
+footer p, footer nav { position: absolute; left: 14px; bottom: 14px; margin: 0; text-transform: lowercase; }
+footer p { color: #333; font-size: 2.2em; font-family: OpenSansRegular, Segoe UI, Myriad Pro, Arial, Helvetica; }
+footer nav { left: 258px; bottom: 4px; width: 127px; height: 47px; overflow: hidden; }
+footer a { float: left; margin-right: 14px; }
+footer a.twitter { background-position: -50px 0; }
+footer a.github { background-position: -101px 0; }
+
+.gist a { color: inherit !important; }

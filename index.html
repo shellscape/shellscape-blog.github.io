@@ -1,0 +1,22 @@
+---
+layout: default
+title: i'm on a blog
+---
+{% for post in paginator.posts %}
+<article>
+	<h1><a href="{{ post.url }}">{{ post.title | markdownify | strip_html }}</a></h1>
+	<h5>pulished <time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date: "%B %d, %Y" }}</time></h5>
+	{{ post.content | postmorefilter: page.url, "Read the rest of this entry" }}
+</article>	
+{% endfor %}
+
+<div class="pagination">
+	{% if paginator.previous_page == 1 %}
+		<span id="newer"><a href="/">Newer Entries</a></span>
+	{% elsif paginator.previous_page %}
+		<span id="newer"><a href="/page{{ paginator.previous_page }}">Newer Entries</a></span>
+	{% endif %}
+	{% if paginator.next_page %}
+		<span id="older"><a href="/page{{ paginator.next_page }}">Older Entries</a></span>
+	{% endif %}
+</div>
