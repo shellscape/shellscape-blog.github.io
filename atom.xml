@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Shellscape Software &rarr; i'm on a blog</title>
+ <title>Shellscape Software → i'm on a blog</title>
  <link href="http://blog.shellscape.org/atom.xml" rel="self"/>
  <link href="http://blog.shellscape.org/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
