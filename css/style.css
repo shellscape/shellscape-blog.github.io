@@ -145,10 +145,10 @@ aside a.twitter { margin: 0 10px 0 40px; }
 
 article { font-size: 1.4em; padding-right: 194px; line-height: 1.5em; padding-top: 70px; }
 article:first-child { padding-top: 0; }
-article h1 { font-size: 4em; font-weight: normal; margin: 0; padding: 0 0 16px 24px; }
+article h1 { font-size: 4em; line-height: 1em; font-weight: normal; margin: 0; padding: 0 0 10px 0; }
 article h1 a { color: #fff !important; text-decoration: none !important; }
 article h1 a:hover { color: #90C308 !important; }
-article h5 { color: #ccc; font-size: 0.9em; font-style: italic; font-weight: normal; margin: 0; padding: 0; padding: 0 0 10px 24px; }
+article h5 { color: #ccc; font-size: 0.9em; font-style: italic; font-weight: normal; margin: 0; padding: 0; padding: 0 0 0 4px; }
 article a { color: #90C308 !important; }
 article a:hover { text-decoration: underline; }
 article .gist { display: inline-block; min-width: 420px; }
@@ -159,8 +159,7 @@ a.github { background: url(../images/site-glyphs.png) no-repeat -149px -1px; wid
 body { background: url(../images/landing-bg-24bit.jpg) repeat-x -503px -394px fixed; }
 
 #main { max-width: 1200px; padding: 24px 0 0 22px; }
-
-#posts { padding: 0 0 60px 16px; }
+#posts { padding: 0 0 60px 40px; }
 
 footer { height: 249px; background: url(../images/bg-footer.png); }
 footer div { position: relative; height: 249px; }

@@ -3,6 +3,6 @@ layout: default
 ---
 <article>
 	<h1>{{ page.title | markdownify | strip_html }}</h1>
-	<h5>pulished <time datetime="{{ page.date | date_to_xmlschema }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time></h5>
+	<h5>published <time datetime="{{ page.date | date_to_xmlschema }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time></h5>
 	{{ content  }}
 </article>
