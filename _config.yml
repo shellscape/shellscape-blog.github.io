@@ -13,15 +13,15 @@ prose:
   media: 'images'
   metadata:
     _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
       - name: "title"
         field:
           element: "text"
           label: "Post Title"
           help: "This is your post's title"
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
       - name: "category"
         field:
           element: "text"
