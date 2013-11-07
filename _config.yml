@@ -13,27 +13,27 @@ prose:
   media: 'images'
   metadata:
     _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post Title"
+          help: "This is your post's title"
       - name: "layout"
         field:
           element: "hidden"
-          value: "blog"
+          value: "post"
+      - name: "category"
+        field:
+          element: "text"
+          label: "Post Category"
+          help: "This is the category your post will live in"
       - name: "tags"
         field:
           element: "multiselect"
-          label: "Add Tags"
+          label: "Post Tags"
           placeholder: "Choose Tags"
           options:
             - name: "Apples"
               value: "apples"
             - name: "Bananas"
               value: "bananas"
-    _posts/static:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
