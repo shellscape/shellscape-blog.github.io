@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '>= 1.4.3'
+gem 'jekyll', '>= 3.5.2'
 gem 'rake'
 gem 'maruku'
 gem 'sass'
